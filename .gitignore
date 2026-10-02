@@ -1,0 +1,22 @@
+
+# .gitignore
+
+# 1. Python Cache (Never commit compiled bytecode)
+__pycache__/
+*.pyc
+
+# 2. Application Logs (Contains runtime history and potentially sensitive dropped data)
+*.log
+sanitizer.log
+
+# 3. Data Directories (CRITICAL: Never commit PII or client data)
+data/raw/
+data/processed/
+*.csv
+
+# 4. OS Generated Files
+.DS_Store
+Thumbs.db
+
+# 5. Environment Variables (For future API keys)
+.env
